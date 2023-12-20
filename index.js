@@ -78,7 +78,11 @@ require("dotenv").config();
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174", "https://restaurent-managment-client.netlify.app"],
+    origin: [
+      "https://restaurent-managment-client.netlify.app",
+      "http://localhost:5173",
+      "http://localhost:5174",
+    ],
     credentials: true,
   })
 );
