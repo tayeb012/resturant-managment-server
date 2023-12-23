@@ -6,74 +6,7 @@ const port = process.env.PORT || 12002;
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
-// const allFoodInsert = [
-//   {
-//     food_name: "Chicken Parmesan",
-//     food_image:
-//       "https://t4.ftcdn.net/jpg/05/84/28/21/240_F_584282196_yaYnsGPNBnpWnH8Zjc6JciGJ3BSyOs2A.jpg",
-//     food_category: "Main Course",
-//     price: 800,
-//     description:
-//       "A savory delight featuring tender chicken, rich marinara sauce, and melted cheese.",
-//     made_by: "Chef Alessandro",
-//     food_origin: "Italy",
-//   },
-//   {
-//     food_name: "Margherita Pizza",
-//     food_image:
-//       "https://t4.ftcdn.net/jpg/06/05/81/81/240_F_605818163_0tMUOryZlMw1f2ebfQ3OqM8cJ9iFOaid.jpg",
-//     food_category: "Pizza",
-//     price: 900,
-//     description:
-//       "Classic Margherita pizza with fresh tomatoes, mozzarella, and basil on a thin, crispy crust.",
-//     made_by: "Chef Giovanni",
-//     food_origin: "Italy",
-//   },
-//   {
-//     food_name: "Grilled Salmon",
-//     food_image:
-//       "https://t3.ftcdn.net/jpg/03/25/35/08/240_F_325350805_D8PVU73qs1dj5TdWgm9IpuAjJ7sgHacK.jpg",
-//     food_category: "Seafood",
-//     price: 1200,
-//     description:
-//       "Deliciously grilled salmon fillet seasoned to perfection, served with a side of roasted vegetables.",
-//     made_by: "Chef Sofia",
-//     food_origin: "Norway",
-//   },
-//   {
-//     food_name: "Vegetarian Pasta",
-//     food_image:
-//       "https://t3.ftcdn.net/jpg/04/39/91/32/240_F_439913207_cLLfS9X5xd0J79zBFtuDHxdoTFLRzBUS.jpg",
-//     food_category: "Pasta",
-//     price: 1000,
-//     description:
-//       "A flavorful vegetarian pasta dish loaded with fresh veggies and tossed in a light garlic sauce.",
-//     made_by: "Chef Maria",
-//     food_origin: "Italy",
-//   },
-//   {
-//     food_name: "Chocolate Lava Cake",
-//     food_image:
-//       "https://t3.ftcdn.net/jpg/06/35/93/08/240_F_635930805_0IpOU7CxsCxKLSVgxhgvnmlS2dj0TQtw.jpg",
-//     food_category: "Dessert",
-//     price: 800,
-//     description:
-//       "Indulge in the decadence of our warm chocolate lava cake with a gooey, molten center.",
-//     made_by: "Pastry Chef Elena",
-//     food_origin: "France",
-//   },
-//   {
-//     food_name: "Caprese Salad",
-//     food_image:
-//       "https://t3.ftcdn.net/jpg/06/28/42/46/240_F_628424606_6vUpzA7SHDQhQq9wUV7FMawDkqDENQ5E.jpg",
-//     food_category: "Appetizer",
-//     price: 1000,
-//     description:
-//       "A refreshing Caprese salad featuring ripe tomatoes, fresh mozzarella, and basil drizzled with balsamic glaze.",
-//     made_by: "Chef Luigi",
-//     food_origin: "Italy",
-//   },
-// ];
+
 
 // Middleware
 app.use(
